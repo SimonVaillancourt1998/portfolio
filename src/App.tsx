@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
+
+  const handleAboutMeClick = () => {
+    console.log('About me clicked!');
+    // Add your logic here for the "About me" button click.
+  };
+
+  const handleLinksClick = () => {
+    console.log('Links clicked!');
+    // Add your logic here for the "Links" button click.
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header onAboutMeClick={handleAboutMeClick} onLinksClick={handleLinksClick}/>
     </div>
   );
 }
