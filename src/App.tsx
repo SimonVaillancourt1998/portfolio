@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import AboutMe from './components/AboutMePage';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <Header onAboutMeClick={handleAboutMeClick} onLinksClick={handleLinksClick}/>
+      <AboutMe/>
     </div>
   );
 }
